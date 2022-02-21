@@ -1,0 +1,15 @@
+{
+    "name": "usuario/framework2",
+    "authors": [
+        {
+            "name": "Manolo Cabrera",
+            "email": "viprestal@hotmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
