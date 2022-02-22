@@ -2,15 +2,31 @@
 
 namespace app\controllers;
 
+use app\core\Application;
+use app\core\Controller;
+use app\core\Request;
 
-class SiteController
+class SiteController extends Controller
 {
-    public function handleContact()
+    public function home()
     {
-        return 'Handling submitted data';
+       $params = [
+           "name" => "VipresInmobiliaria"
+       ];
+       return $this->render('home', $params);
     }
     public function contact()
     {
+       //return 'Show contact form';
+       return $this->render('contact');
+    }
+    public function handleContact(Request $request)
+    {
+        $body = $request->getBody();
+        echo '<pre>';
+        var_dump($body);
+        echo '<pre>';
+        exit();
         return 'Handling submitted data';
     }
 }
