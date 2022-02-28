@@ -54,6 +54,7 @@ class Router
     {
         $layoutContent = $this->layoutContent();
         $viewContent = $this->renderOnlyView($view, $params);
+       
         return str_replace('{{ content }}', $viewContent, $layoutContent);
 
     }
