@@ -47,7 +47,7 @@ class Field{
         return $this;
     }
 
-    public function passwordEmail()
+    public function emailField()
     {
         $this->type = self::TYPE_EMAIL;
         return $this;
